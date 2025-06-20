@@ -1,9 +1,6 @@
-name: solar system 
+name: solar system - self hosted
 on: 
   workflow_dispatch:
-  push: 
-    branches: 
-      - main
 
 
 env: 
@@ -14,7 +11,7 @@ env:
 jobs: 
   unit-testing: 
     name: nodejs unit testing
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps: 
       - name: checkout repo 
         uses: actions/checkout@v4
